@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+.container {
+    margin: 0px 164px;
+}
+.header {
+    background-image: url(Bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+        margin-left: 0px;
+            margin-top: 20px;
+}
+.header-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+        margin-top: 20px;
+}
+.header-subtitle2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 15px;
+    color: white;
+}
+.header-line {
+    padding-top: 24px;
+    display: flex;}
+.images {
+    width: 20%;
+    margin-top: -50%;
+    margin-left: 85%;
+    }
+.map {
+    margin-left: 1500px;
+    margin-top: -500px;
+    width: 320px; /* Установите желаемую ширину карты */
+    height: 320px; /* Установите желаемую высоту карты */
+}
+.map:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 467px;
+    background-color: #5D6544;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: -200px;}
+.contacts {
+    margin-left: 1240px;
+    margin-top: 0px;
+}
+.map:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 550px;
+    background-color: #5D6544;
+    margin-top: 354px;
+    margin-left: -200px;
+}
+.logo__img {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.images img {
+    animation: fall 1.5s ease-in-out;
+}

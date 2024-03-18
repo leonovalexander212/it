@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webovio</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="header-line"> 
+            
+                <a href="index.html" style="text-decoration: none"><div class='header-logo'>
+                    <img class ="logo__img" src="Logo.svg" alt="">
+                    </div> </a>
+                </div>    </div>
+            <div class="header-form">
+                <h2 class="header-subtitle">Application Form</h2>
+                <form method="POST" action="index.html">
+                    <label class="header-title" for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label class="header-title" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label class="header-title" for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    
+                    <button class="submit-button" type="submit">Submit</button>
+                </form>
+            </div>
+<div class="text"><div class="header-subtitle2">
+    For further cooperation or consideration <br>of your vacancy in our office, you can write to us </div></div>
+
+    <script>
+       
+        window.addEventListener('load', function () {
+            const logoImg = document.querySelector('.logo__img');
+            logoImg.style.opacity = '0';
+            logoImg.style.transform = 'translateX(-100px)';
+
+            setTimeout(function () {
+                logoImg.style.opacity = '1';
+                logoImg.style.transform = 'translateX(0)';
+            }, 100);
+        });
+        
+    </script>
+</body>
+</html>
